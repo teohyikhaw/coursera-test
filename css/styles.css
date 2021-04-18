@@ -1,0 +1,120 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-size:20px;
+	color:#fff;
+	/*background-color: #112d4e;*/
+	background: linear-gradient(#112d4e, #3f72af);
+	font-family: Open Sans, sans-serif;
+}
+
+/*Navbar Begin*/
+#navbar-header{
+	font-family: Futura;
+	font-size:30px;
+	font-weight:bold;
+	color: #fff;
+	text-shadow: 1.5px 1.5px 1.5px #00adb5;
+	padding-left: 30px;
+}
+
+.navbar-nav a:hover, a:active{
+	text-decoration: underline;
+	color:#fff;
+
+}
+
+.navbar-nav a:link, nav a:visited{
+	text-decoration: none;
+	color:#fff;
+	vertical-align: middle;
+	opacity: 2;
+}
+/*Navbar End*/
+
+/*Main Content Begin*/
+#main-content{
+	padding-left:5%;
+	padding-right: 5%;
+}
+
+#main-content a:hover, a:active{
+	color: black;
+	background-color: #a1eafb;
+}
+
+#main-content a:link, a:visited{
+	text-decoration: underline;
+	color: #fff;
+}
+
+h2{
+	text-align: center;
+	font-size: 4vw;
+	padding:2.5%;
+}
+
+#cursive-quote{
+	font-family: 'Dancing Script', cursive;
+	text-align:center;
+	font-size: 3vw;
+	background-color: #46cdcf;
+}
+
+.container .jumbotron {
+	background: url('../images/me-500.jpg') no-repeat;
+    height: 500px;
+    width:375px;
+ 	box-shadow: 0 0 10px #3f72af;
+	border: 2px solid #3f72af;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+/*Main Content End*/
+
+/*Large device*/
+@media (min-width: 1200px) {
+  #about-text{
+  	border-style: border-box;
+	text-align: justify;
+	padding-left:0;
+	margin-left:0; 
+	}
+}
+
+/*Medium device*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #about-text{
+	text-align: justify;
+	padding-left:0;
+	margin-left:0; 
+	}
+}
+
+/*Small device*/
+@media (min-width: 768px) and (max-width: 991px) {
+	#about-text{
+	text-align: justify;
+	font-size:2.5vw;
+	padding-left:0;
+	margin-left:0; 
+	}
+}
+
+/*Extra Small device*/
+@media (max-width: 991px) {
+  #about-text{
+	text-align: justify;
+	font-size:2.5vw;
+	padding-left:0;
+	margin-left:0; 
+}
+  }
+}
+#footnote{
+	font-size:10px;
+	padding-left:5%;
+}

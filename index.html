@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+	<!--Smooth Scrolling-->
+	<script>
+	function scrollToSmoothly(pos, time) {
+	  if (isNaN(pos)) {
+	    throw "Position must be a number";
+	  }
+	  if (pos < 0) {
+	    throw "Position can not be negative";
+	  }
+	  var currentPos = window.scrollY || window.screenTop;
+	  if (currentPos < pos) {
+	    if (time) {
+	      var x;
+	      var i = currentPos;
+	      x = setInterval(function() {
+	        window.scrollTo(0, i);
+	        i += 10;
+	        if (i >= pos) {
+	          clearInterval(x);
+	        }
+	      }, time);
+	    } else {
+	      var t = 10;
+	      for (let i = currentPos; i <= pos; i += 10) {
+	        t += 10;
+	        setTimeout(function() {
+	          window.scrollTo(0, i);
+	        }, t / 2);
+	      }
+	    }
+	  } else {
+	    time = time || 2;
+	    var i = currentPos;
+	    var x;
+	    x = setInterval(function() {
+	      window.scrollTo(0, i);
+	      if (i <= pos) {
+	        clearInterval(x);
+	      }
+	      i -= 10;
+	    }, time);
+	  };
+
+	 
+	</script>
+
+    <title>My Portfolio!</title>
+ </head>
+
+ <body>
+ 	<div id="Top"></div>
+ <header>
+	  <!--Navigation Bar-->
+ 	  
+ 	  <nav class="navbar navbar-expand-lg navbar-dark static-top navbar-default" style="background-color: #252a34">
+	  		<div class="container-fluid">
+	  			<div id="navbar-header" class="navbar-brand">Yik Haw Teoh</div>
+
+	    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+     	 			<span class="navbar-toggler-icon"></span>
+    			</button>
+
+	    		 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	    		 	<div class="navbar-nav">
+	    		 		
+	    				<a class="nav-link" href="#About"><img src="images/info.png" width="32" height="32" alt="" class="d-inline-block align-text-top">  About</a>
+			    		<a class="nav-link" href="#Portfolio"><img src="images/profiles.png" width="32" height="32" alt="" class="d-inline-block align-text-top">  Portfolio</a>
+				    	<a class="nav-link" href="#Contact"><img src="images/mail.png" width="32" height="32" alt="" class="d-inline-block align-text-top">  Contact</a>
+				    </div>	
+		    	</div> 
+ 			</div> 
+		</nav>
+	</header>
+
+	<div id="main-content">
+	<br>
+	<div id="cursive-quote">&quot; The only way to do great work is to love what you do&quot; - Steve Jobs</div>
+
+    <div id="About">
+    	<h2>About</h2>
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+			    	<div class="jumbotron" class="img-responsive visible-xs">
+			      		
+				    </div>
+				</div>
+				<div id="about-text" class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+			    	<div>
+			    		Hey! Nice to meet you fellow person reading this! I am Yik Haw from <a href="https://en.wikipedia.org/wiki/Malaysia" target="_blank" title="Click me to learn more about Malaysia!">Malaysia</a>! A small country between Thailand and Singapore where the weather is always hot or rainy. In fact, this picture was taken at Batu Ferringhi Beach, Penang which is an example of the beautiful flora and fauna of our country! 
+			    	</div>
+			    	<br>
+			    	<div>
+			    		Currently, I am majoring in Computer Science/Physics at Santa Monica College, California. I chose this path as I have a strong interest in problem solving and logic as well as the curiousity to understand the fundamental nature of our universe.
+			    	</div>
+			    	<br>
+			    	<div>My hobbies include: </div>
+			    	<ul>
+			    		<li>Guitar &#127928;</li>
+			    		<li>Running &#127939;</li>
+			    		<li><a href="https://www.instagram.com/yikhaw08_snapshot/" target="_blank" title="My Instagram Account!">Photography</a> &#128248;</li>
+			    	</ul>
+				</div>
+			</div>
+		</div>
+
+
+
+    </div>
+    <div id="Portfolio"><h2>Portfolio</h2>
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-4 col-sm-6 col-xs-12">Test 1</div>
+    			<div class="col-md-4 col-sm-6 col-xs-12">Test 2</div>
+
+    		</div>
+    	</div>
+    	<div class="col-md-4 col-sm-6 col-xs-12">
+    		<span>Test 1</span>
+    	</div>
+    	<div class="col-md-4 col-sm-6 col-xs-12">
+    		<span>Test 1</span>
+    	</div>
+
+    	<ul>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+    		<li>1</li>
+
+    		<li>1</li>
+    		<li>1</li>
+    		
+    	</ul>
+    </div>
+
+
+    <div id="Contact"><h2>Contact</h2></div>
+    <a href="https://www.linkedin.com/in/yikhawteoh/" target="_blank" title="LinkedIn">LinkedIn Profile</a>
+
+    <div><a href="#Top">Go to top</a></div>
+
+	</div>
+
+	
+
+    <footer>
+		<div id="footnote">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+	</footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
