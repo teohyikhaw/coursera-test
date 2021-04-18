@@ -64,17 +64,6 @@ h2{
 	/*background-color: #46cdcf;*/
 }
 
-.container .jumbotron {
-	background: url('../images/me-500.jpg') no-repeat;
-    height: 500px;
-    width:375px;
- 	box-shadow: 0 0 10px #3f72af;
-	border: 2px solid #3f72af;
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-}
-
 .projects{
 	border-width: 30px;
 	border-height:30px;
@@ -89,7 +78,18 @@ h2{
 
 /*Large device*/
 @media (min-width: 1200px) {
-  #about-text{
+  	.container .jumbotron {
+		background: url('../images/me-500.jpg') no-repeat;
+	    height: 500px;
+	    width:375px;
+	 	box-shadow: 0 0 10px #3f72af;
+		border: 2px solid #3f72af;
+		display: block;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	}
+
+  	#about-text{
   	border-style: border-box;
 	text-align: justify;
 	padding-left:0;
@@ -130,7 +130,18 @@ h2{
 
 /*Medium device*/
 @media (min-width: 992px) and (max-width: 1199px) {
-  #about-text{
+  	.container .jumbotron {
+		background: url('../images/me-500.jpg') no-repeat;
+	    height: 500px;
+	    width:375px;
+	 	box-shadow: 0 0 10px #3f72af;
+		border: 2px solid #3f72af;
+		display: block;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	}
+
+  	#about-text{
 	text-align: justify;
 	padding-left:0;
 	margin-left:0; 
@@ -170,6 +181,17 @@ h2{
 
 /*Small device*/
 @media (min-width: 768px) and (max-width: 991px) {
+	.container .jumbotron {
+		background: url('../images/me-500.jpg') no-repeat;
+	    height: 500px;
+	    width:375px;
+	 	box-shadow: 0 0 10px #3f72af;
+		border: 2px solid #3f72af;
+		display: block;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	}
+
 	#about-text{
 	text-align: justify;
 	font-size:2vw;
@@ -211,6 +233,17 @@ h2{
 
 /*Extra Small device*/
 @media (max-width: 767px) {
+  	.container .jumbotron {
+		background: url('../images/me-xs.jpg') no-repeat;
+	    height: 250px;
+	    width:188px;
+	 	box-shadow: 0 0 10px #3f72af;
+		border: 2px solid #3f72af;
+		display: block;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	}
+
   	#about-text{
 		text-align: justify;
 		font-size:2.5vw;
@@ -228,20 +261,21 @@ h2{
 	}
 
 	.container .minesweeper{
-		background: url('../images/minesweeper.jpg') no-repeat;
-	    height: 354px;
-	    width: 412px;
+		background: url('../images/minesweeper-xs.jpg') no-repeat;
+	    height: 235px;
+	    width: 274px;
 	 	/*box-shadow: 0 0 10px #3f72af;
 		border: 2px solid #3f72af;*/
 		display: block;
 	  	margin-left: auto;
 	  	margin-right: auto;
+	  	padding-bottom:50px;
 	}
 
 	.container .insta-data-analysis{
-		background: url('../images/insta-data-analysis.jpg') no-repeat;
-	    height: 354px;
-	    width: 412px;
+		background: url('../images/insta-data-analysis-xs.jpg') no-repeat;
+	    height: 235px;
+	    width: 274px;
 	 	/*box-shadow: 0 0 10px #3f72af;
 		border: 2px solid #3f72af;*/
 		display: block;
