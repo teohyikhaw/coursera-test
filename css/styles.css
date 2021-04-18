@@ -65,11 +65,13 @@ h2{
 }
 
 .projects{
+	box-sizing: border-box;
 	border-width: 30px;
 	border-height:30px;
-	border: 2px solid black;
-	margin: 5px;
-	padding: 5px;
+	border-radius: 10px;
+	border: 1.5px solid black;
+	margin: 10px;
+	padding: 15px;
 }
 
 
@@ -283,9 +285,18 @@ h2{
 	  	margin-right: auto;
 	}
 
+}
 
+/*Footer*/
+.panel-footer{
+	background-color: #212121;
+	padding-left: 0px;
+	padding-top:2.5%;
+	padding-bottom: 2.5%;
 }
+
+
 #footnote{
-	font-size:10px;
-	padding-left:5%;
-}
+	font-size:1.5vw;
+/*	padding-left:5%;
+*/}
